@@ -15,8 +15,8 @@ import org.onebusaway.gtfs.model.Trip;
 public class Window {
 
 	String name;
-	private int start;
-	private int end;
+	int start;
+	int end;
 	private ArrayList<String> serviceIds;
 
 	public static Window fromJSON(JSONObject jWindow) {
