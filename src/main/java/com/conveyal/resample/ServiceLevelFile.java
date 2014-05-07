@@ -32,13 +32,13 @@ public class ServiceLevelFile {
 		return ret;
 	}
 
-	public List<Route> getRoutes() {
-		List<Route> ret = new ArrayList<Route>();
+	public List<ServiceLevel> getServiceLevels() {
+		List<ServiceLevel> ret = new ArrayList<ServiceLevel>();
 		
 		JSONArray jRoutes = data.getJSONArray("routes");
 		for(int i=0; i<jRoutes.length(); i++){
 			JSONObject jRoute = jRoutes.getJSONObject(i);
-			Route rt = Route.fromJSON( jRoute );
+			ServiceLevel rt = ServiceLevel.fromJSON( jRoute );
 			ret.add( rt );
 		}
 

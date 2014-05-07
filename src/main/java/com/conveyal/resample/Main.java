@@ -1,5 +1,9 @@
 package com.conveyal.resample;
 
+import java.util.List;
+
+import org.onebusaway.gtfs.model.Trip;
+
 public class Main {
 
 	public static void main(String[] args) throws Exception {
@@ -14,14 +18,23 @@ public class Main {
 		
 		ServiceLevelFile slf = new ServiceLevelFile( servicelevel_filename );
 		
-		for( Window window : slf.getWindows() ){
-			System.out.println( window );
-		}
+		GTFSService gss = new GTFSService( gtfs_filename );
+		gss.read();
 		
-		for( Route route : slf.getRoutes() ){
-			System.out.println( route );
-			System.out.println( route.getHeadway("peak_am") );
-			System.out.println( route.getTrips("peak_am") );
+		for(ServiceLevel serviceLevel : slf.getServiceLevels()){
+			for(Window window : slf.getWindows()){
+				Double headway = serviceLevel.getHeadway(window.name);
+				Integer nTrips = serviceLevel.getTrips(window.name);
+				
+				List<Trip> trips = gss.getTrips( serviceLevel.route, window );
+				
+				if(trips==null){
+					System.out.println( "route "+serviceLevel.route+" window "+window.name+": could not find route" );
+				} else {
+					System.out.println( "route "+serviceLevel.route+" window "+window.name+": "+trips.size()+" trips" );
+				}
+				
+			}
 		}
 		
 	} 
