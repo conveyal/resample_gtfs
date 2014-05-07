@@ -1,14 +1,19 @@
 package com.conveyal.resample;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ServiceLevel {
 
-	private boolean suppress;
+	boolean suppress;
 	String route;
 	private JSONObject headwayData;
 	private JSONObject tripsData;
+	public List<TripFilter> tripFilters=new ArrayList<TripFilter>();
 
 	public static ServiceLevel fromJSON(JSONObject jRoute) {
 		ServiceLevel ret = new ServiceLevel();
@@ -21,6 +26,16 @@ public class ServiceLevel {
 		ret.route = jRoute.getString("route");
 		ret.headwayData = jRoute.getJSONObject("headways");
 		ret.tripsData = jRoute.getJSONObject("trips");
+		
+		try{
+			JSONArray jTripFilters = jRoute.getJSONArray("trip_filters");
+			for(int i=0; i<jTripFilters.length(); i++){
+				TripFilter tf = TripFilter.fromJSON( jTripFilters.getJSONArray(i) );
+				ret.tripFilters.add(tf);
+			}
+		} catch (JSONException ex){
+			// no trip filters. that's fine.
+		}
 		
 		return ret;
 	}

@@ -34,8 +34,7 @@ public class GTFSService {
 	    System.out.println("done.");
 	}
 
-	public List<Trip> getTrips(String routeName, Window window) {
-		
+	public List<Trip> getTrips(String routeName, List<TripFilter> tripFilters, Window window) {
 		
 		Route route = this.getRouteForName(routeName);
 		if(route==null){
@@ -49,6 +48,15 @@ public class GTFSService {
 			if( !window.includes(trip,store.getStopTimesForTrip(trip)) ){
 				continue;
 			}
+			
+			boolean passesFilter=true;
+			for(TripFilter tf : tripFilters){
+				passesFilter = passesFilter && tf.accepts( trip );
+			}
+			if(!passesFilter){
+				continue;
+			}
+			
 			ret.add(trip);
 		}
 		
