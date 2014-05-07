@@ -56,8 +56,17 @@ public class GTFSService {
 	}
 
 	private Route getRouteForName(String routeName) {
+		String baseRouteName;
+		if(routeName.length()>2 && routeName.substring(routeName.length()-2).equals("EX")){
+			baseRouteName = routeName.substring(0,routeName.length()-2);
+		} else if (routeName.length()>4 && routeName.substring(routeName.length()-4).equals("DART")){
+			baseRouteName = routeName.substring(0,routeName.length()-4);
+		} else {
+			baseRouteName = routeName;
+		}
+				
 		for( Route route : store.getAllRoutes() ){
-			if(route.getShortName().equals(routeName)){
+			if(route.getShortName().equals(baseRouteName)){
 				return route;
 			}
 		}
