@@ -15,8 +15,8 @@ import org.onebusaway.gtfs.model.Trip;
 public class Window {
 
 	String name;
-	int start;
-	int end;
+	private int start;
+	private int end;
 	private ArrayList<String> serviceIds;
 
 	public static Window fromJSON(JSONObject jWindow) {
@@ -60,6 +60,34 @@ public class Window {
 
 	private boolean runsOn(AgencyAndId serviceId) {
 		return this.serviceIds.contains(serviceId.getId());
+	}
+
+	public int sizeHours() {
+		return this.end-this.start;
+	}
+
+	public int sizeSeconds() {
+		return this.sizeHours()*3600;
+	}
+
+	public int startSeconds() {
+		return this.start*3600;
+	}
+	
+	public int endSeconds() {
+		return this.end*3600;
+	}
+
+	public int sizeMins() {
+		return this.sizeHours()*60;
+	}
+
+	public int startMins() {
+		return this.start*60;
+	}
+
+	public int endMins() {
+		return this.end*60;
 	}
 
 }

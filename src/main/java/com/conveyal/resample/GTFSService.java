@@ -8,13 +8,15 @@ import java.util.List;
 import org.onebusaway.gtfs.impl.GtfsRelationalDaoImpl;
 import org.onebusaway.gtfs.model.Agency;
 import org.onebusaway.gtfs.model.Route;
+import org.onebusaway.gtfs.model.Stop;
+import org.onebusaway.gtfs.model.StopTime;
 import org.onebusaway.gtfs.model.Trip;
 import org.onebusaway.gtfs.serialization.GtfsReader;
 
 public class GTFSService {
 
 	private String filename;
-	private GtfsRelationalDaoImpl store;
+	GtfsRelationalDaoImpl store;
 
 	public GTFSService(String gtfs_filename) {
 		this.filename = gtfs_filename;
@@ -45,16 +47,20 @@ public class GTFSService {
 		
 		List<Trip> trips = store.getTripsForRoute(route);
 		for(Trip trip : trips){
-			if( !window.includes(trip,store.getStopTimesForTrip(trip)) ){
-				continue;
+			if(window != null){
+				if( !window.includes(trip,store.getStopTimesForTrip(trip)) ){
+					continue;
+				}
 			}
 			
-			boolean passesFilter=true;
-			for(TripFilter tf : tripFilters){
-				passesFilter = passesFilter && tf.accepts( trip );
-			}
-			if(!passesFilter){
-				continue;
+			if(tripFilters != null){
+				boolean passesFilter=true;
+				for(TripFilter tf : tripFilters){
+					passesFilter = passesFilter && tf.accepts( trip );
+				}
+				if(!passesFilter){
+					continue;
+				}
 			}
 			
 			ret.add(trip);
@@ -79,6 +85,26 @@ public class GTFSService {
 			}
 		}
 		return null;
+	}
+
+	public StopPattern getPattern(Trip trip) {
+		StopPattern ret = new StopPattern();
+		
+		List<StopTime> stopTimes = store.getStopTimesForTrip(trip);
+		for(StopTime stopTime : stopTimes){
+			Stop stop = stopTime.getStop();
+			ret.stops.add(stop);
+		}
+		
+		return ret;
+	}
+
+	public List<StopTime> getStopTimesForTrip(Trip exemplar) {
+		return store.getStopTimesForTrip(exemplar);
+	}
+
+	public List<Trip> getTrips(String route) {
+		return getTrips( route, null, null );
 	}
 
 }
