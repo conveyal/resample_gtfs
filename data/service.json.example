@@ -1,0 +1,2452 @@
+{
+  "windows": [
+    {
+      "start": 6, 
+      "end": 9, 
+      "name": "peak_am", 
+      "service_ids": [
+        "WEEKDAY"
+      ]
+    }, 
+    {
+      "start": 9, 
+      "end": 15, 
+      "name": "midday", 
+      "service_ids": [
+        "WEEKDAY"
+      ]
+    }, 
+    {
+      "start": 15, 
+      "end": 18, 
+      "name": "peak_pm", 
+      "service_ids": [
+        "WEEKDAY"
+      ]
+    }, 
+    {
+      "start": 18, 
+      "end": 24, 
+      "name": "night", 
+      "service_ids": [
+        "WEEKDAY"
+      ]
+    }, 
+    {
+      "start": 6, 
+      "end": 24, 
+      "name": "sat", 
+      "service_ids": [
+        "SATURDAY"
+      ]
+    }, 
+    {
+      "start": 6, 
+      "end": 24, 
+      "name": "sun", 
+      "service_ids": [
+        "SUNDAY"
+      ]
+    }
+  ], 
+  "routes": [
+    {
+      "route": "1", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": null, 
+        "peak_pm": 15.0, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "2", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 30.0, 
+        "peak_pm": 10.0, 
+        "night": 45.0, 
+        "midday": 12.0, 
+        "sat": 15.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "3", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 30.0, 
+        "peak_pm": 10.0, 
+        "night": 37.5, 
+        "midday": 15.0, 
+        "sat": 15.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "4", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "5", 
+      "trip_filters":[["trip_short_name","LOCAL"]],
+      "headways": {
+        "peak_am": 17.0, 
+        "sun": 30.0, 
+        "peak_pm": 17.0, 
+        "night": 25.0, 
+        "midday": 20.0, 
+        "sat": 20.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "5EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "7", 
+      "trip_filters":[["trip_short_name","LOCAL"]],
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 15.0, 
+        "peak_pm": 10.0, 
+        "night": 37.5, 
+        "midday": 10.0, 
+        "sat": 15.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "7EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]], 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "8", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 45.0, 
+        "midday": 15.0, 
+        "sat": 15.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "9EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 9, 
+        "peak_pm": 8
+      }
+    }, 
+    {
+      "route": "11", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "12", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 5, 
+        "peak_pm": 3
+      }
+    }, 
+    {
+      "route": "13", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 30.0, 
+        "peak_pm": 10.0, 
+        "night": 37.5, 
+        "midday": 15.0, 
+        "sat": 20.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "14", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": null, 
+        "peak_pm": 15.0, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "16", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 30.0, 
+        "midday": 20.0, 
+        "sat": 20.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "19", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "21", 
+      "trip_filters":[["trip_short_name","LOCAL"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "21EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 12, 
+        "peak_pm": 12
+      }
+    }, 
+    {
+      "route": "22", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "24", 
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": null, 
+        "peak_pm": 20.0, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "25", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "26", 
+      "trip_filters":[["trip_short_name","LOCAL"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "26EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": null, 
+        "peak_pm": 20.0, 
+        "night": null, 
+        "midday": 30.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "27", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "28", 
+      "trip_filters":[["trip_short_name","LOCAL"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "28EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": 30.0, 
+        "peak_pm": 20.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "29", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 9, 
+        "peak_pm": 9
+      }
+    }, 
+    {
+      "route": "30", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "31", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "32", 
+      "headways": {
+        "peak_am": 11.5, 
+        "sun": 30.0, 
+        "peak_pm": 11.5, 
+        "night": 30.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "33", 
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": 60.0, 
+        "peak_pm": 20.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "36", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 20.0, 
+        "peak_pm": 10.0, 
+        "night": 25.0, 
+        "midday": 15.0, 
+        "sat": 15.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "37", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "40", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 45.0, 
+        "midday": 15.0, 
+        "sat": 20.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "47", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "48EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "50", 
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": 30.0, 
+        "peak_pm": 20.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "56EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 11, 
+        "peak_pm": 10
+      }
+    }, 
+    {
+      "route": "57", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "60", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 30.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "61", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "62", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "64EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 5, 
+        "peak_pm": 5
+      }
+    }, 
+    {
+      "route": "65", 
+      "headways": {
+        "peak_am": 12.5, 
+        "sun": 30.0, 
+        "peak_pm": 12.5, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "66EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "67", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "68", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "70", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 20.0, 
+        "peak_pm": 10.0, 
+        "night": null, 
+        "midday": 15.0, 
+        "sat": 15.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "71", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": null, 
+        "peak_pm": 60.0, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "72", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "73", 
+      "headways": {
+        "peak_am": 8.0, 
+        "sun": 12.0, 
+        "peak_pm": 8.0, 
+        "night": 22.5, 
+        "midday": 8.0, 
+        "sat": 10.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "75", 
+      "headways": {
+        "peak_am": 13.5, 
+        "sun": 30.0, 
+        "peak_pm": 13.5, 
+        "night": 30.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "82", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "83", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "84", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "99", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "106", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 45.0, 
+        "midday": 15.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "107", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 30.0, 
+        "peak_pm": 30.0, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "110", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "111", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 8, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "route": "114", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 3, 
+        "peak_pm": 3
+      }
+    }, 
+    {
+      "route": "116EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 8, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "route": "118", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": null, 
+        "peak_pm": 60.0, 
+        "night": 120.0, 
+        "midday": 120.0, 
+        "sat": 120.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "118EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 1, 
+        "peak_pm": 1
+      }
+    }, 
+    {
+      "route": "119", 
+      "headways": {
+        "peak_am": 120.0, 
+        "sun": null, 
+        "peak_pm": 120.0, 
+        "night": null, 
+        "midday": 240.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "121", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 13, 
+        "peak_pm": 13
+      }
+    }, 
+    {
+      "route": "122", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 5, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "route": "124", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 30.0, 
+        "peak_pm": 30.0, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "125", 
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": null, 
+        "peak_pm": 20.0, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "128", 
+      "headways": {
+        "peak_am": 20.0, 
+        "sun": 30.0, 
+        "peak_pm": 20.0, 
+        "night": 30.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "139", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "140", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 30.0, 
+        "midday": 15.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "143EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 4, 
+        "peak_pm": 4
+      }
+    }, 
+    {
+      "route": "148", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": 60.0, 
+        "peak_pm": 60.0, 
+        "night": 60.0, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "152", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "154", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "156", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "157", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 6, 
+        "peak_pm": 6
+      }
+    }, 
+    {
+      "route": "158", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "159", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "161", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "167", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "168", 
+      "headways": {
+        "peak_am": 24.0, 
+        "sun": 60.0, 
+        "peak_pm": 24.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "173", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "177", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 21, 
+        "peak_pm": 21
+      }
+    }, 
+    {
+      "route": "178", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "179", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "181", 
+      "headways": {
+        "peak_am": 22.5, 
+        "sun": 30.0, 
+        "peak_pm": 22.5, 
+        "night": 30.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "182", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": 60.0, 
+        "peak_pm": 60.0, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "186", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": null, 
+        "peak_pm": 60.0, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "187", 
+      "headways": {
+        "peak_am": 45.0, 
+        "sun": 60.0, 
+        "peak_pm": 45.0, 
+        "night": 60.0, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "190", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "192", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "193EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 7, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "197", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 7, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "route": "200", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "201", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "202", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "203", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "204", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": null, 
+        "peak_pm": 30.0, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "205EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "208", 
+      "headways": {
+        "peak_am": 120.0, 
+        "sun": null, 
+        "peak_pm": 120.0, 
+        "night": null, 
+        "midday": 120.0, 
+        "sat": 120.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "209", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "210", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "211EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "212", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 27, 
+        "peak_pm": 26
+      }
+    }, 
+    {
+      "route": "213", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "214", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 8, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "route": "215", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "217", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "221", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 30.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "226", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "232", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 4, 
+        "peak_pm": 4
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "234", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "235", 
+      "headways": {
+        "peak_am": 15.0, 
+        "sun": 30.0, 
+        "peak_pm": 15.0, 
+        "night": 30.0, 
+        "midday": 15.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "236", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "237", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "238", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "240", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "241", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "242", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "243", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "244EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "248", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 30.0, 
+        "peak_pm": 30.0, 
+        "night": 60.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "249", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": 45.0, 
+        "peak_pm": 60.0, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": 45.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "250", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "255", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 30.0, 
+        "peak_pm": 10.0, 
+        "night": 45.0, 
+        "midday": 15.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "260", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "265", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "269", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 7, 
+        "peak_pm": 7
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "271", 
+      "headways": {
+        "peak_am": 10.0, 
+        "sun": 30.0, 
+        "peak_pm": 10.0, 
+        "night": 30.0, 
+        "midday": 15.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "277", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "280", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "304", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "306EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "308", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "311", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 11, 
+        "peak_pm": 10
+      }
+    }, 
+    {
+      "route": "312EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 18, 
+        "peak_pm": 18
+      }
+    }, 
+    {
+      "route": "331", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": null, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "342", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 5, 
+        "peak_pm": 5
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "355EX", 
+      "trip_filters":[["trip_short_name","EXPRESS"]],
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": 14, 
+        "peak_pm": 13
+      }
+    }, 
+    {
+      "suppress": true, 
+      "route": "372EX", 
+      "headways": {
+        "peak_am": 18.0, 
+        "sun": 30.0, 
+        "peak_pm": 18.0, 
+        "night": 45.0, 
+        "midday": 30.0, 
+        "sat": 30.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "901DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "903DART", 
+      "headways": {
+        "peak_am": 30.0, 
+        "sun": 60.0, 
+        "peak_pm": 30.0, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "907DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": 90.0, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "909DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "910DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "913DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "914DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": 60.0, 
+        "sat": 60.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "915DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": 90.0, 
+        "sat": 90.0
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "916DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "919DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "927DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "930DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "931DART", 
+      "headways": {
+        "peak_am": 60.0, 
+        "sun": null, 
+        "peak_pm": 60.0, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }, 
+    {
+      "route": "935DART", 
+      "headways": {
+        "peak_am": null, 
+        "sun": null, 
+        "peak_pm": null, 
+        "night": null, 
+        "midday": null, 
+        "sat": null
+      }, 
+      "trips": {
+        "peak_am": null, 
+        "peak_pm": null
+      }
+    }
+  ]
+}
