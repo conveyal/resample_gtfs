@@ -130,9 +130,6 @@ public class Main {
 	    //   copy over trips from old feed, except stale ones
 	    int nDeletedTrips = 0;
 	    for(Trip trip : gss.store.getAllTrips()){
-	    	if( trip.getId().getId().equals("18164218") ){
-	    		System.out.println("Break");
-	    	}
 	    	
 	    	if(!staleTrips.contains(trip)){
 	    		gtfsWriter.handleEntity(trip);
@@ -220,6 +217,7 @@ public class Main {
 			int t = serviceStart + i*headway;
 			 
 			Trip sample = new Trip(exemplar);
+			sample.setBlockId(null); //no interlining for resampled trips
 			newTrips.add(sample);
 			
 			// replace the id
@@ -265,6 +263,7 @@ public class Main {
 		
 		for(int t=window.startMins(); t<window.endMins(); t+=headwayMins){
 			Trip sample = new Trip(exemplar);
+			sample.setBlockId(null); // no interlining for resampled trips
 			newTrips.add(sample);
 			
 			// replace the id
