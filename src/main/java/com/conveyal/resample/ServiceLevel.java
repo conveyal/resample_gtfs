@@ -24,8 +24,8 @@ public class ServiceLevel {
 			ret.suppress = false;
 		}
 		ret.route = jRoute.getString("route");
-		ret.headwayData = jRoute.getJSONObject("headways");
-		ret.tripsData = jRoute.getJSONObject("trips");
+		ret.headwayData = jRoute.has("headways") ? jRoute.getJSONObject("headways") : null;
+		ret.tripsData = jRoute.has("trips") ? jRoute.getJSONObject("trips") : null;
 		
 		try{
 			JSONArray jTripFilters = jRoute.getJSONArray("trip_filters");
@@ -45,10 +45,16 @@ public class ServiceLevel {
 	}
 
 	public Double getHeadway(String window_name) {
+		if (headwayData == null)
+			return null;
+		
 		try{
 			Object ret = headwayData.get(window_name);
 			if(!JSONObject.NULL.equals(ret)){
-				return (Double)ret;
+				if (ret instanceof Integer)
+					return ((Integer) ret).doubleValue();
+				
+				return (Double) ret;
 			} else {
 				return null;
 			}
@@ -59,6 +65,9 @@ public class ServiceLevel {
 	}
 
 	public Integer getTrips(String window_name) {
+		if (tripsData == null)
+			return null;
+		
 		try{
 			Object ret = tripsData.get(window_name);
 			if(!JSONObject.NULL.equals(ret)){
