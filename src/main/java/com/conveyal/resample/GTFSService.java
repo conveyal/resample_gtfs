@@ -80,7 +80,7 @@ public class GTFSService {
 		}
 				
 		for( Route route : store.getAllRoutes() ){
-			if(route.getShortName().equals(baseRouteName)){
+			if(baseRouteName.equals(route.getShortName())){
 				return route;
 			}
 		}
